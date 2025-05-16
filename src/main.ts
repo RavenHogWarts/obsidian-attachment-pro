@@ -99,6 +99,7 @@ export default class AttachmentProPlugin extends Plugin {
 				new AttachmentsModal(this.app, this, false).open();
 			},
 		});
+    
 		this.addCommand({
 			id: "insert-attachments",
 			name: getLocal().context_menu_insert, 
@@ -106,6 +107,7 @@ export default class AttachmentProPlugin extends Plugin {
 				new AttachmentsModal(this.app, this, true).open();
 			},
 		});
+    
 		this.addRibbonIcon('layers-3', 'Show Attachments', () => {
 			new AttachmentsModal(this.app, this, false).open();
 		});
